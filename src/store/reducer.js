@@ -23,5 +23,18 @@ export const activeUserReducer = (state = null, action) => {
   }
 };
 export const messagesReducer = (state = {}, action) => {
-  return state;
+  switch (action.type) {
+    case "SET_MESSAGE":
+      const { activeUserId, text } = action.payload;
+      const number = Object.keys(state[activeUserId]);
+      return {
+        ...state,
+        [activeUserId]: {
+          ...state[activeUserId],
+          [number]: { number, text, is_user_msg: true },
+        },
+      };
+    default:
+      return state;
+  }
 };
