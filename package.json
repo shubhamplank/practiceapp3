@@ -8,8 +8,13 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-redux": "^8.0.5",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "redux": "^4.2.1",
+    "shortid": "^2.2.16",
+    "txtgen": "^3.0.5",
+    "web-vitals": "^2.1.4",
+    "faker": "5.5.3"
   },
   "scripts": {
     "start": "react-scripts start",
