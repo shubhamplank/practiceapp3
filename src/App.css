@@ -48,6 +48,7 @@
 }
 
 .EmptyScreen {
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -92,6 +93,13 @@
   background-color: white;
 }
 .Header-details {
+  margin-left: 1rem;
+}
+.typing {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: green;
   margin-left: 1rem;
 }
 
