@@ -1,9 +1,6 @@
+import { useSelector, useDispatch } from "react-redux";
 const EmptyScreen = () => {
-  const user = {
-    status: "lsdjflsdjfklsj",
-    name: "abhilash",
-    profile_pic: "https://avatars.dicebear.com/v2/avataaars/1827176651240f4d534fa1079bb3a40a.svg",
-  };
+  const user = useSelector((s) => s.user);
   return (
     <div className="EmptyScreen">
       <h1 className="EmptyScreen-details">{user.name}</h1>
