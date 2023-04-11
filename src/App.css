@@ -47,3 +47,25 @@
   flex: 1 1 0;
   background-color: rgb(14, 9, 9);
 }
+
+.EmptyScreen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+}
+.EmptyScreen-img {
+  height: 300px;
+  width: 300px;
+  margin: 1.2rem 0.5rem;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.EmptyScreen-btn{ 
+  padding: 1rem;
+  border-radius: 30px;
+  width: 200px;
+}

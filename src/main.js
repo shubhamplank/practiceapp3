@@ -1,6 +1,8 @@
-
+import ChatWindow from "./chatWindow";
+import EmptyScreen from "./emptyScreen";
 const Main = () => {
-  return <div className="Main">Main</div>;
+  const activeUser = false;
+  return <div className="Main">{activeUser ? <ChatWindow /> : <EmptyScreen />}</div>;
 };
 
 export default Main;
