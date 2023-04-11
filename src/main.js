@@ -1,7 +1,7 @@
 import ChatWindow from "./chatWindow";
 import EmptyScreen from "./emptyScreen";
 const Main = () => {
-  const activeUser = false;
+  const activeUser = true;
   return <div className="Main">{activeUser ? <ChatWindow /> : <EmptyScreen />}</div>;
 };
 

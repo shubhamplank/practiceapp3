@@ -5,7 +5,6 @@
 .App {
   height: 100vh;
   display: flex;
-  flex: 1 1 0;
   color: white;
 }
 
@@ -43,9 +42,9 @@
 }
 
 .Main {
-  display: flex;
+  /* display: flex; */
   flex: 1 1 0;
-  background-color: rgb(14, 9, 9);
+  background-color: rgb(40 30 30);
 }
 
 .EmptyScreen {
@@ -64,8 +63,71 @@
   background-color: white;
 }
 
-.EmptyScreen-btn{ 
+.EmptyScreen-btn {
   padding: 1rem;
   border-radius: 30px;
   width: 200px;
+}
+
+.ChatWindow {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.Header {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border-bottom: 1px solid white;
+  background-color: rgb(32, 22, 22);
+}
+
+.Header-img {
+  height: 50px;
+  width: 50px;
+  margin-left: 0.5rem;
+  border-radius: 50%;
+  background-color: white;
+}
+.Header-details {
+  margin-left: 1rem;
+}
+
+.Messages {
+  /* height: 100%; */
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow-y: scroll;
+}
+.Messages::-webkit-scrollbar {
+  display: none;
+}
+.user-msg,
+.non-user-msg {
+  width: 60%;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #0d3e64, rgb(40 30 30));
+}
+
+.non-user-msg {
+  align-self: flex-end;
+  background: linear-gradient(90deg, #0f523e, rgb(40 30 30));
+}
+
+.InputBox {
+  width: 80%;
+  margin: 1rem auto;
+}
+
+.InputBox-element {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 20px;
+  background-color: black;
+  border: none;
 }
