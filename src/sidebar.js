@@ -1,3 +1,4 @@
+import { useSelector } from "react-redux";
 const Sidebar = () => {
   const data = [
     {
@@ -16,11 +17,13 @@ const Sidebar = () => {
       profile_pic: "https://avatars.dicebear.com/v2/avataaars/a52f17df51c50066a16625c73cfca095.svg",
     },
   ];
+
+  console.log(useSelector((s) => s));
   return (
     <div className="Sidebar">
       {data.map((e) => {
         return (
-          <div className="User">
+          <div className="User" key={e.user_id}>
             <img className="User-img" src={e.profile_pic}></img>
             <div className="User-details">
               <h3>{e.name}</h3>
